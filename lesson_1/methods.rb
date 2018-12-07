@@ -87,6 +87,10 @@ class TodoList
     puts result.flatten
   end
   
+  def to_a
+    todos
+  end
+  
   def each
     todos.each do |item|
       yield(item)
